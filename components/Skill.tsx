@@ -15,7 +15,7 @@ const Skill: FunctionComponent<{ skill: IsSkill }> = ({
       >
         {
           <Sicon
-            className="cursor-pointer md:w-20 md:h-20 sm:w-20 sm:h-20"
+            className="cursor-pointer w-20 h-20"
             onMouseOver={() => setHidden(false)}
             onMouseOut={() => setHidden(true)}
             style={{ color: `${color}` }}
