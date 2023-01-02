@@ -162,7 +162,7 @@ export const myprojects:ISProject[]=[
     name:'PortFolio',
     description:'Portfolio made with Next JS Framer Motion and TypeScript',
     image_path:"/Image/port.png",
-    github_url:'',
+    github_url:'https://github.com/ajay2827/Portfolio',
     category:['react'],
     key_techs:["NextJS",'Framer','Tailwind','TypeScript'],
   },
