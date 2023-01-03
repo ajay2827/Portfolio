@@ -50,7 +50,7 @@ const Tstragger={
         <h1 className="mx-3 mb-5 text-5xl font-semibold tracking-wide text-center text-green font-Dancing">Tech</h1>
         <h1 className="mb-5 text-5xl font-semibold tracking-wide text-center text-black dark:text-white font-Dancing"> i Know</h1>
       </motion.div>
-      <motion.div className="flex flex-wrap w-full gap-5 px-24" variants={Tstragger} initial='initial' animate='animate'>
+      <motion.div className="flex flex-wrap w-full gap-5 lg:px-24 sm:px-auto" variants={Tstragger} initial='initial' animate='animate'>
         {skilldata.map((skill) => (
          <motion.div variants={TFadInup} key={skill.id} className="relative mx-4 my-4 "> <Skill skill={skill}/></motion.div> 
         ))}
