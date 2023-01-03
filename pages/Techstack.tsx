@@ -52,7 +52,7 @@ const Tstragger={
       </motion.div>
       <motion.div className="flex flex-wrap w-full gap-5 lg:px-24 sm:px-auto" variants={Tstragger} initial='initial' animate='animate'>
         {skilldata.map((skill) => (
-         <motion.div variants={TFadInup} key={skill.id} className="relative mx-5 my-5 "> <Skill skill={skill}/></motion.div> 
+         <motion.div variants={TFadInup} key={skill.id} className="relative mx-4 my-4 "> <Skill skill={skill}/></motion.div> 
         ))}
       </motion.div>
     </motion.div>
