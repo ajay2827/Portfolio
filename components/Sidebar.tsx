@@ -16,10 +16,6 @@ function Sidebar() {
     setTheme(theme==='light'?'dark':'light');
    }
    
-   useEffect(()=>{
-    setTheme('dark');
-   },[])
-     
   return (
     <div>
        <Image src={profilePic} alt="user-avatar"  className='object-cover object-top mx-auto rounded-full w-36 h-36 dark:border-2 dark:border-white dark:shadow-white'/>
