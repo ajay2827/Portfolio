@@ -16,10 +16,7 @@ function Sidebar() {
     setTheme(theme==='light'?'dark':'light');
    }
      useEffect(()=>{
-    const defaulttheme=()=>{
       setTheme('dark');
-    }
-    defaulttheme();
   },[])
      
   return (
