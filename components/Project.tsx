@@ -38,14 +38,14 @@ const Project: FunctionComponent<{
         
       />
       
-      <p className="my-2 text-lg font-semibold tracking-wide text-center text-gray-800 dark:text-white font-Balsamiq">{name}</p>
+      <p className="my-2 text-lg font-semibold tracking-wide text-center text-white dark:text-gray-800 font-Balsamiq">{name}</p>
       </motion.div>
 
       {/* // card showen only when we click on it */}
 
       {showdetail === id && (
         
-        <div  className="absolute top-0 left-0 grid w-full h-auto p-2 text-black bg-gray-300 rounded-md dark:bg-dark-100 dark:text-white md:grid-cols-2 gap-x-12">
+        <div  className="absolute top-0 left-0 grid w-full h-auto p-2 text-white rounded-md dark:text-black dark:bg-gray-800 bg-dark-100 md:grid-cols-2 gap-x-12">
           {/* left */}
           <motion.div
             className="mx-4 my-4"
@@ -72,7 +72,7 @@ const Project: FunctionComponent<{
                 href={github_url}
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-400 rounded-md dark:bg-dark-200 hover:animate-pulse"
+                className="flex items-center px-4 py-2 space-x-3 text-lg rounded-md dark:bg-slate-600 bg-dark-200 hover:animate-pulse"
               >
                 <AiFillGithub /> <span>Github</span>
               </a>
@@ -93,7 +93,7 @@ const Project: FunctionComponent<{
             >
               {name}
             </motion.h2>
-            <motion.h3 className="mb-3 font-semibold text-gray-800 dark:text-white font-Hanken" variants={FadInup}>
+            <motion.h3 className="mb-3 font-semibold text-white dark:text-gray-800 font-Hanken" variants={FadInup}>
               {description}
             </motion.h3>
             <motion.div
@@ -103,9 +103,9 @@ const Project: FunctionComponent<{
               {key_techs.map((k) => (
                 <span
                   key={k}
-                  className="px-2 py-1 my-1 bg-gray-200 rounded-sm dark:bg-dark-200"
+                  className="px-2 py-1 my-1 rounded-sm dark:bg-gray-500 bg-dark-200"
                 >
-                  {k}
+                  
                 </span>
               ))}
             </motion.div>
@@ -116,7 +116,7 @@ const Project: FunctionComponent<{
             initial="initial"
             animate="animate"
             onClick={() => setShowdetail(null)}
-            className="absolute p-1 bg-gray-200 rounded-full dark:bg-dark-200 top-3 right-3"
+            className="absolute p-1 rounded-full dark:bg-gray-700 bg-dark-200 top-3 right-3"
           >
             <MdClose size={30} />
           </motion.button>

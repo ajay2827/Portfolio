@@ -33,7 +33,7 @@ function Navbar() {
   },[pathname])
   return (
     <div className='flex justify-between px-5 py-3 my-3'>
-       <span className='text-4xl font-bold tracking-wide scale-110 border-b-4 font-Kasuhan text-green border-green md:text-2xl dark:text-white'>{active}</span>
+       <span className='text-4xl font-bold tracking-wide text-white scale-110 border-b-4 font-Kasuhan dark:text-green border-green md:text-2xl'>{active}</span>
 
        <div className='flex space-x-4 font-lg'>
        

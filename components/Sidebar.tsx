@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
 import Image from 'next/image'
-import  profilePic from '../public/profile.jpg'
 import {CiLocationOn} from 'react-icons/ci'
 import {AiFillLinkedin} from 'react-icons/ai'
 import {BsGithub} from 'react-icons/bs'
 import {BsInstagram} from 'react-icons/bs'
 import {MdContactPage} from 'react-icons/md'
 import { useTheme } from 'next-themes'
+
 
 function Sidebar() {
      
@@ -19,15 +19,15 @@ function Sidebar() {
      
   return (
     <div>
-       <Image src={profilePic} alt="user-avatar"  className='object-cover object-top mx-auto rounded-full w-36 h-36 dark:border-2 dark:border-white dark:shadow-white'/>
+       <Image src={'/'} alt="user-avatar" width={144} height={144} className='object-cover object-top mx-auto border-2 border-white rounded-full w-36 h-36 shadow-white dark:border-none'/>
         
        <h3 className='my-4 text-3xl font-semibold tracking-wider text-center font-Kasuhan'>
-        <span className='text-green'>Ajay </span> 
+        <span className='text-green dark:text-white'>Ajay </span> 
         Singh
        </h3>
   
-      <p className='px-2 py-1 my-4 text-lg font-medium tracking-wide text-center text-gray-800 bg-gray-200 rounded-full dark:text-white font-Balsamiq dark:bg-dark-200' >Web Developer</p>
-      <a href='' download='name' className='flex flex-row justify-center px-2 py-1 my-3 text-lg font-medium tracking-wide text-center text-gray-800 bg-gray-200 rounded-full dark:text-white font-Balsamiq place-items-center dark:bg-dark-200' > <MdContactPage className='w-5 h-5 mx-2 hover:scale-105 hover:animate-pulse'/> Download Resume</a>
+      <p className='px-2 py-1 my-4 text-lg font-medium tracking-wide text-center text-white rounded-full dark:text-black dark:bg-gray-600 font-Balsamiq bg-dark-200' >Web Developer</p>
+      <a href='' download='name' className='flex flex-row justify-center px-2 py-1 my-3 text-lg font-medium tracking-wide text-center text-white rounded-full dark:text-black dark:bg-gray-600 font-Balsamiq place-items-center bg-dark-200' > <MdContactPage className='w-5 h-5 mx-2 hover:scale-105 hover:animate-pulse'/> Download Resume</a>
       
       {/* // socail icon */}
       <div className='flex flex-row mx-auto my-5 text-green justify-evenly'>
@@ -37,12 +37,12 @@ function Sidebar() {
       </div>
       
       {/* email and address */}
-      <div className='py-4 my-5 text-center bg-gray-200 rounded-md dark:bg-dark-200' style={{marginRight:'-1rem' ,marginLeft:'-1rem'}}>
-        <div className='flex flex-row items-center justify-center space-x-1 text-xl tracking-wider text-gray-800 dark:text-white font-Great '>
+      <div className='py-4 my-5 text-center rounded-md dark:bg-gray-600 bg-dark-200' style={{marginRight:'-1rem' ,marginLeft:'-1rem'}}>
+        <div className='flex flex-row items-center justify-center space-x-1 text-xl font-medium tracking-wider text-white dark:text-black font-Great '>
             <CiLocationOn/>
             <span> Gwalior, India</span>
         </div>
-        <p className='my-3 text-xl tracking-wider text-gray-800 dark:text-white font-Great'>ajay27singh09@gmail.com</p>
+        <p className='my-3 text-xl font-medium tracking-wider text-white dark:text-black font-Great'>ajay27singh09@gmail.com</p>
       </div>
 
       <div className='flex flex-col items-center justify-center'>

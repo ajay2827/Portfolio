@@ -68,7 +68,7 @@ export default function Document() {
         ></link>
         <link rel="shortcut icon" href="/fevicon/favicon.ico" />
       </Head>
-      <body className=" bg-gradient-to-r from-green to-blue-400 dark:from-dark-500 dark:to-dark-700 dark:text-white lg:overflow-hidden no-scrollbar">
+      <body className="text-white bg-gradient-to-r from-dark-500 to-dark-700 dark:from-gray-600 dark:to-gray-600 dark:text-black lg:overflow-hidden no-scrollbar">
         <Main />
         <NextScript />
       </body>

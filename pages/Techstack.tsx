@@ -43,12 +43,12 @@ const Tstragger={
       initial="initial"
       animate="animate"
       exit="exit"
-      className="flex flex-col items-center justify-center w-full h-full mt-3 rounded-t-sm bg-slate-800 dark:bg-dark-100"
+      className="flex flex-col items-center justify-center w-full h-full mt-3 rounded-t-sm dark:bg-gray-800 bg-dark-100"
     > 
       <motion.div   
        className="flex items-center justify-center">
         <h1 className="mx-3 mb-5 text-5xl font-semibold tracking-wide text-center text-green font-Dancing">Tech</h1>
-        <h1 className="mb-5 text-5xl font-semibold tracking-wide text-center text-black dark:text-white font-Dancing"> i Know</h1>
+        <h1 className="mb-5 text-5xl font-semibold tracking-wide text-center text-white dark:text-black font-Dancing"> i Know</h1>
       </motion.div>
       <motion.div className="flex flex-wrap w-full gap-5 lg:px-24 sm:px-auto" variants={Tstragger} initial='initial' animate='animate'>
         {skilldata.map((skill) => (
