@@ -8,6 +8,7 @@ import {MdContactPage} from 'react-icons/md'
 import { useTheme } from 'next-themes'
 
 
+
 function Sidebar() {
      
    const {theme,setTheme}=useTheme();
@@ -15,6 +16,7 @@ function Sidebar() {
    const changetheme=()=>{
     setTheme(theme==='light'?'dark':'light');
    }
+ 
 
      
   return (
