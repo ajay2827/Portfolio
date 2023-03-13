@@ -20,7 +20,7 @@ function Sidebar() {
      
   return (
     <div>
-       <Image src={Profile} alt="user-avatar" width={144} height={144} className='object-cover object-top mx-auto border-2 border-white rounded-full w-36 h-36 shadow-white '/>
+       <Image src={'https://github.com/ajay2827/AdventureVerse/blob/main/server/Images/1671136635710profile.jpg?raw=true'} alt="user-avatar" width={144} height={144} className='object-cover object-top mx-auto border-2 border-white rounded-full w-36 h-36 shadow-white '/>
         
        <h3 className='my-4 text-3xl font-semibold tracking-wider text-center dark:text-gray-500 font-Kasuhan'>
         <span className='text-green dark:text-white'>Ajay </span> 
