@@ -16,3 +16,4 @@ const ServiceCard:FunctionComponent<{service:IsService}>=({service:{Icon,about,t
 }
 
 export default ServiceCard
+
