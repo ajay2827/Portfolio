@@ -16,6 +16,16 @@ module.exports = {
             500: "#0f1115",
             700: "#202125",
           },
+          extblue:
+          {
+            100:'#134570',
+            200:'#0f385b',
+            300:'#0c2a45',
+            400:'#081d2f',
+            500:'#071a2a',
+            600:'#061725'
+          },
+  
           'link':' #0077b5',
            'c++':'#00599C',
            'html':'#E34F26',
@@ -35,8 +45,7 @@ module.exports = {
         },
         width:{
           'sicon':'80px'
-         },
-  
+         }, 
       },
       fontFamily: {
         'Kasuhan':['Kaushan Script','cursive'],
@@ -54,6 +63,7 @@ module.exports = {
         "custom-light": " 0 0 10px #313131",
         "custom-dark": "5px 5px 10px #0a0c0e , -5px -5px 10px #14161c",
         'custom-white':'0px 0px 10x #fff',
+        'custom-blue':'5px 5px 10px #071a2a, -5px -5px 10px #0c2a45'
       },
 
      

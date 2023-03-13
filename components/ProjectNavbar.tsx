@@ -4,10 +4,10 @@ import { Category } from '../type'
 
 export const ProjectItem:FunctionComponent<{value:Category|"all", handlerfiltercategory:Function,active:string}> = ({value,handlerfiltercategory,active}) => {
     
-    let className='text-lg font-medium capitalize cursor-pointer hover:text-green font-Satisfy';
+    let className='text-lg font-medium capitalize cursor-pointer dark:text-gray-400 dark:hover:text-green hover:text-green font-Satisfy';
     if(active===value)
     {
-        className+=' text-green';
+        className+=' text-green dark:text-green';
     } 
 
   return (

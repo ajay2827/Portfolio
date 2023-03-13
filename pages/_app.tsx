@@ -13,9 +13,9 @@ export default function App({ Component, pageProps ,router}: AppProps) {
       <Client>
    <ThemeProvider attribute='class'>
     <div className='grid grid-cols-12 gap-6 px-6 my-10 lg:px-48 sm:px-20 md:px-32'>
-      <div className='h-full col-span-12 p-4 text-base text-center dark:bg-gray-700 dark:shadow-custom-light shadow-custom-dark lg:col-span-3 rounded-2xl bg-dark-500'><Sidebar/> </div>
+      <div className='h-full col-span-12 p-4 text-base text-center dark:bg-extblue-400 dark:shadow-custom-blue shadow-custom-dark lg:col-span-3 rounded-2xl bg-dark-500'><Sidebar/> </div>
       
-      <div className='flex flex-col col-span-12 overflow-hidden dark:bg-gray-700 lg:col-span-9 rounded-2xl bg-dark-500 dark:shadow-custom-light shadow-custom-dark'>
+      <div className='flex flex-col col-span-12 overflow-hidden dark:bg-extblue-400 dark:shadow-custom-blue lg:col-span-9 rounded-2xl bg-dark-500 shadow-custom-dark'>
       <Navbar/>
      
       <AnimatePresence  mode='wait'>

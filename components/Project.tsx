@@ -38,14 +38,14 @@ const Project: FunctionComponent<{
         
       />
       
-      <p className="my-2 text-lg font-semibold tracking-wide text-center text-white dark:text-gray-800 font-Balsamiq">{name}</p>
+      <p className="my-2 text-lg font-semibold tracking-wide text-center text-white font-Balsamiq">{name}</p>
       </motion.div>
 
       {/* // card showen only when we click on it */}
 
       {showdetail === id && (
         
-        <div  className="absolute top-0 left-0 grid w-full h-auto p-2 text-white rounded-md dark:text-black dark:bg-gray-800 bg-dark-100 md:grid-cols-2 gap-x-12">
+        <div  className="absolute top-0 left-0 grid w-full h-auto p-2 text-white rounded-md dark:text-black dark:bg-extblue-600 bg-dark-100 md:grid-cols-2 gap-x-12">
           {/* left */}
           <motion.div
             className="mx-4 my-4"
@@ -59,7 +59,7 @@ const Project: FunctionComponent<{
             tiltMaxAngleY={10}>
             <motion.div className="rounded-lg" variants={FadInup} whileHover={{boxShadow:'0px 0px 10px #fff'}}>
               <Image
-                className="w-full h-full border-2 border-white rounded-lg"
+                className="w-full h-full duration-300 border-2 border-white rounded-lg opacity-60 hover:opacity-100"
                 src={image_path}
                 alt={name}
                 width="300"
@@ -72,7 +72,7 @@ const Project: FunctionComponent<{
                 href={github_url}
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center px-4 py-2 space-x-3 text-lg rounded-md dark:bg-slate-600 bg-dark-200 hover:animate-pulse"
+                className="flex items-center px-4 py-2 space-x-3 text-lg rounded-md dark:bg-slate-500 bg-dark-200 hover:animate-pulse"
               >
                 <AiFillGithub /> <span>Github</span>
               </a>
@@ -88,12 +88,12 @@ const Project: FunctionComponent<{
             animate="animate"
           >
             <motion.h2
-              className="mb-3 text-xl font-medium tracking-wide font-Balsamiq md:text-2xl lg:text-3xl"
+              className="mb-3 text-xl font-medium tracking-wide dark:text-white font-Balsamiq md:text-2xl lg:text-3xl"
               variants={FadInup}
             >
               {name}
             </motion.h2>
-            <motion.h3 className="mb-3 font-semibold text-white dark:text-gray-800 font-Hanken" variants={FadInup}>
+            <motion.h3 className="mb-3 font-semibold text-white dark:text-gray-200 font-Hanken" variants={FadInup}>
               {description}
             </motion.h3>
             <motion.div
@@ -103,9 +103,9 @@ const Project: FunctionComponent<{
               {key_techs.map((k) => (
                 <span
                   key={k}
-                  className="px-2 py-1 my-1 rounded-sm dark:bg-gray-500 bg-dark-200"
+                  className="px-2 py-1 my-1 rounded-sm dark:bg-slate-500 bg-dark-200"
                 >
-                  
+                {k}
                 </span>
               ))}
             </motion.div>

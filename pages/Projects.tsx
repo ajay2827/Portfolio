@@ -62,7 +62,7 @@ import { motion } from "framer-motion";
     <motion.div layout className="relative grid grid-cols-12 gap-4 my-3" variants={Pstragger} initial='initial' animate='animate' exit='exit'>
         {projectsa.map((p) => (
           
-          <motion.div layout variants={PFadInup} key={p.id} className="col-span-12 p-3 rounded-lg dark:bg-slate-600 sm:col-span-6 lg:col-span-4 bg-dark-200"><Project showdetail={showdetail} setShowdetail={setShowdetail} project={p}/> </motion.div>
+          <motion.div layout variants={PFadInup} key={p.id} className="col-span-12 p-3 rounded-lg dark:bg-extblue-300 dark:bg-opacity-75 sm:col-span-6 lg:col-span-4 bg-dark-200"><Project showdetail={showdetail} setShowdetail={setShowdetail} project={p}/> </motion.div>
     
         ))}
       </motion.div>
