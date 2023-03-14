@@ -123,6 +123,16 @@ export const myprojects:ISProject[]=[
   },
   {
     id:2,
+    name:'Keytrove',
+    description:'command line tool Keytrove to authenticate users and store data in the form of key-value pairs directly from the terminal.',
+    image_path:'/Image/keytrove.png',
+    github_url:'https://github.com/ajay2827/keytrove_cli',
+    category:['express'],
+    key_techs:['NodeJs','Express']
+  }
+  ,
+  {
+    id:3,
     name:'Deliciousss',
     description:'A React Food Recipe App',
     image_path:"/Image/food_recipe.png",
@@ -131,7 +141,7 @@ export const myprojects:ISProject[]=[
     key_techs:["React",'Framer','CSS'],
   },
   {
-    id:3,
+    id:4,
     name:'Millionaire-App',
     description:'React.js "Who wants to be a millionaire" game app using react hooks',
     image_path:"/Image/millioner.png",
@@ -140,20 +150,11 @@ export const myprojects:ISProject[]=[
     key_techs:["React",'CSS'],
   },
   {
-    id:4,
+    id:5,
     name:'QR-Code-Generator',
     description:'A Simple QR-Code-Generator app using JavaScript',
     image_path:"/Image/qr-code.png",
     github_url:'https://github.com/ajay2827/QR-Code-Generator',
-    category:['javascript'],
-    key_techs:['JavaScript','CSS'],
-  },
-  {
-    id:5,
-    name:'Cross-Fit-Gym',
-    description:'HTML, CSS , JavaScript Landing page',
-    image_path:"/Image/landing_page.png",
-    github_url:'https://github.com/ajay2827/Cross-Fit-Gym',
     category:['javascript'],
     key_techs:['JavaScript','CSS'],
   },
