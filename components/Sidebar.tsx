@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import {CiLocationOn} from 'react-icons/ci'
 import {AiFillLinkedin} from 'react-icons/ai'
@@ -12,7 +12,9 @@ import { useTheme } from 'next-themes'
 function Sidebar() {
      
    const {theme,setTheme}=useTheme();
+   const [download,setDownload]=useState<Boolean>(false)
    
+
    const changetheme=()=>{
     setTheme(theme==='light'?'dark':'light');
    }
@@ -29,7 +31,12 @@ function Sidebar() {
        </h3>
   
       <p className='px-2 py-1 my-4 text-lg font-medium tracking-wide text-center text-white rounded-full dark:bg-extblue-300 dark:bg-opacity-75 font-Balsamiq bg-dark-200' >Web Developer</p>
-      <a href='/assests/AjaySingh-Resume.pdf' download='AjaySingh-Resume' className='flex flex-row justify-center px-2 py-1 my-3 text-lg font-medium tracking-wide text-center text-white rounded-full dark:bg-extblue-300 dark:bg-opacity-75 font-Balsamiq place-items-center bg-dark-200' > <MdContactPage className='w-5 h-5 mx-2 hover:scale-105 hover:animate-pulse'/> Download Resume</a>
+      <a href='/assests/AjaySingh-Resume.pdf'
+       download='AjaySingh-Resume'
+        onClick={()=>setDownload(true)} 
+        className='flex flex-row justify-center px-2 py-1 my-3 text-lg font-medium tracking-wide text-center text-white rounded-full dark:bg-extblue-300 dark:bg-opacity-75 font-Balsamiq place-items-center bg-dark-200' > 
+        <MdContactPage className='w-5 h-5 mx-2 hover:scale-105 hover:animate-pulse'/>{download?'Downloaded !':'Download Resume'}
+        </a>
       
       {/* // socail icon */}
       <div className='flex flex-row mx-auto my-5 text-green justify-evenly'>
