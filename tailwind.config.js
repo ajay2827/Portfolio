@@ -8,6 +8,10 @@ module.exports = {
           transparent: 'transparent',
           current: 'currentColor',
           'green':'#00f260',
+           'linkedin':'#0A66C2',
+           'github':'white',
+           'insta':'radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)'
+          ,
           dark: {
             DEFAULT: "#010101",
             100: "#0a0b0e",

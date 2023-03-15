@@ -39,10 +39,10 @@ function Sidebar() {
         </a>
       
       {/* // socail icon */}
-      <div className='flex flex-row mx-auto my-5 text-green justify-evenly'>
-        <a href="https://www.linkedin.com/in/ajay-singh-9a73281a0" rel="noreferrer" target='_blank'> <AiFillLinkedin className='w-8 h-8 duration-500 cursor-pointer hover:scale-125'/> </a>
-        <a href="https://github.com/ajay2827" rel="noreferrer" target='_blank'> <BsGithub className='w-8 h-8 duration-500 cursor-pointer hover:scale-125'/> </a>
-        <a href="https://www.instagram.com/ajay.singh0710/" rel="noreferrer" target='_blank'> <BsInstagram className='w-8 h-8 duration-500 cursor-pointer hover:scale-125'/> </a>
+      <div className='flex flex-row mx-auto my-5 text-gray-300 text-opacity-90 justify-evenly'>
+        <a href="https://www.linkedin.com/in/ajay-singh-9a73281a0" rel="noreferrer" target='_blank'> <AiFillLinkedin className='w-8 h-8 duration-500 cursor-pointer hover:text-gray-50  hover:scale-125'/> </a>
+        <a href="https://github.com/ajay2827" rel="noreferrer" target='_blank'> <BsGithub className='w-8 h-8 duration-500 cursor-pointer hover:text-gray-50  hover:scale-125'/> </a>
+        <a href="https://www.instagram.com/ajay.singh0710/" rel="noreferrer" target='_blank'> <BsInstagram className='w-8 h-8 duration-500 cursor-pointer hover:text-gray-50  hover:scale-125'/> </a>
       </div>
       
       {/* email and address */}
