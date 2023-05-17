@@ -114,12 +114,12 @@ export  const services:IsService[]=[
 export const myprojects:ISProject[]=[
   {
     id:1,
-    name:'AdventureVerse',
-    description:'React Full Stack Blogging App',
-    image_path:"/Image/adventureverse.png",
-    github_url:'https://github.com/ajay2827/AdventureVerse',
+    name:'AjaxChat',
+    description:'FullStack Chat Application',
+    image_path:"/Image/chat.png",
+    github_url:'https://github.com/ajay2827/AjaxChat',
     category:['react','express'],
-    key_techs:["React",'Node','Express','Framer'],
+    key_techs:["React",'TailwindCSS','NodeJs','Express','Socket.io'],
   },
   {
     id:2,
@@ -129,25 +129,25 @@ export const myprojects:ISProject[]=[
     github_url:'https://github.com/ajay2827/keytrove_cli',
     category:['express'],
     key_techs:['NodeJs','Express']
-  }
-  ,
+  },
   {
     id:3,
+    name:'AdventureVerse',
+    description:'React Full Stack Blogging App',
+    image_path:"/Image/adventureverse.png",
+    github_url:'https://github.com/ajay2827/AdventureVerse',
+    category:['react','express'],
+    key_techs:["React",'Node','Express','Framer-motion'],
+  },
+
+  {
+    id:4,
     name:'Deliciousss',
     description:'A React Food Recipe App',
     image_path:"/Image/food_recipe.png",
     github_url:'https://github.com/ajay2827/FoodRecipe',
     category:['react'],
     key_techs:["React",'Framer','CSS'],
-  },
-  {
-    id:4,
-    name:'Millionaire-App',
-    description:'React.js "Who wants to be a millionaire" game app using react hooks',
-    image_path:"/Image/millioner.png",
-    github_url:'https://github.com/ajay2827/Millionaire-App',
-    category:['react',],
-    key_techs:["React",'CSS'],
   },
   {
     id:5,
